@@ -17,7 +17,8 @@
 @{
     if(Model != null)
     {
-        <h2>Title: @Model.Title</h2>
+        <div class="card" style="width:18rem">
+         <h2 class="card-header">Title: @Model.Title</h2>
         <img src="@Model.Poster">
         <p>Year: @Model.Year</p>
         <p>Genre: @Model.Genre</p>
@@ -26,7 +27,9 @@
         <p>Director: @Model.Director</p>
         <p>Country: @Model.Country</p>
         <p>Awards: @Model.Awards</p>
-        <p>Rating: @Model.Rated</p>
+        <p class="card-footer" >Rating: @Model.Rated</p>
+        </div>
+       
         
     }
 }

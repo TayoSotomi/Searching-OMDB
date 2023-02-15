@@ -24,16 +24,19 @@
     {
         foreach(MovieModel m in Model)
         {
-            <h2>Title: @m.Title</h2>
-            <img src="@m.Poster">
-            <p>Year: @m.Year</p>
-            <p>Genre: @m.Genre</p>
-            <p>Plot: @m.Plot</p>
-            <p>Casts: @m.Actors</p>
-            <p>Director: @m.Director</p>
-            <p>Country: @m.Country</p>
-            <p>Awards: @m.Awards</p>
-            <p>Ratings: @m.Rated</p>
+            <div class="card" style="width:18rem">
+                <h2 class="card-header">Title: @m.Title</h2>
+                <img src="@m.Poster">
+                <p>Year: @m.Year</p>
+                <p>Genre: @m.Genre</p>
+                <p>Plot: @m.Plot</p>
+                <p>Casts: @m.Actors</p>
+                <p>Director: @m.Director</p>
+                <p>Country: @m.Country</p>
+                <p>Awards: @m.Awards</p>
+                <p class="card-footer ">Ratings: @m.Rated</p>
+            </div>
+           
         }
     }
 }
